@@ -52,7 +52,7 @@ def on_button_pressed_a():
 
 #vymazání hlasů
 def on_pin_pressed_p2():
-    votes.clear()
+    votes.pop()
 
 input.on_pin_pressed(TouchPin.P2, on_pin_pressed_p2)
 input.on_button_pressed(Button.B, on_button_pressed_b)
